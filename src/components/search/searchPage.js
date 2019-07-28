@@ -96,7 +96,6 @@ class Search extends React.Component {
                   <p><Link to={"/course/" + l.slug}>BUG ID:{l.id}</Link></p>
                   Weight:{l.NOS++} <td></td> Title:{l.title}
                 </li>
-
               );
             })}
           </ul>
