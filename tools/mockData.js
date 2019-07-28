@@ -1,80 +1,103 @@
 const courses = [
     {
         id: 1,
-        title: "A complete understanding of Java",
+        title: "OSPF CLI ISSUE",
         slug: "java-basic",
         authorId: 1,
-        category: "Java"
+        category: "CLI",
+        description:"OSPF ISSUE",
+        NOS: 12
+        
+        
     },
     {
        id: 2,
-       title: "Build a Java application with Rest and Spring",
+       title: "OSPF CONTROL PLANE ISSUE",
        slug: "build-java-rest-spring",
        authorId: 1,
-       category: "Java"
+       category: "CONTROL PLANE",
+       description:"OSPF ISSUE",
+       NOS: 15
+       
    },
    {
        id: 3,
-       title: "Code Refactor Analysis",
+       title: "OSPF DATA PLANE ISSUE",
        slug: "code-refactor",
        authorId: 2,
-       category: "Software Practices"
+       category: "DATA PLANE",
+       NOS:11,
+       Description:"OSPF ISSUE"
    },
    {
        id: 4,
-       title: "Building Javascript Development Environment",
+       title: "LDP DATA PLANE ISSUE",
        slug: "building-javascript-dev-environment",
        authorId: 3,
-       category: "JavaSript"
+       category: "DATA PLANE",
+       NOS:9,
+       Description:"LDP ISSUE"
    },
    {
        id: 5,
-       title: "Building Application with React",
+       title: "LDP CONTROL PLANE ISSUE",
        slug: "react-redux-react",
        authorId: 3,
-       category: "React"
+       category: "CONTROL PLANE",
+       NOS: 30,
+       Description:"LDP ISSUE"
    },
    {
        id: 6,
-       title: "Understanding Design patterns",
+       title: "LDP CLI ISSUE",
        slug: "design-patterns",
        authorId: 2,
-       category: "Software Practices"
+       category: "CLI",
+       NOS: 31,
+       Description:"LPD ISSUE"
    },
    {
        id: 7,
-       title: "Building Automation framework with Java and Selenium",
+       title: "BGP CLI ISSUE",
        slug: "writing-clean-code-humans",
        authorId: 1,
-       category: "Java"
+       category: "CLI",
+       NOS:35,
+       Description:"BGP ISSUE"
    },
    {
        id: 8,
-       title: "Time management for humans",
+       title: "BGP DATA PLANE ISSUE",
        slug: "time-management",
        authorId: 2,
-       category: "Career"
+       category: "DATA PLANE",
+       NOS:4,
+       Description:"BGP ISSUE"
    },
    {
        id: 9,
-       title: "JavaScript Fundamentals",
+       title: "BGP CONTROL PLANE ISSUE",
        slug: "javascript-fundamental",
        authorId: 3,
-       category: "JavaScript"
+       category: "CONTROL PLANE",
+       NOS:90,
+       Description:"BGP ISSUE"
    },
    {
        id: 10,
-       title: "Web Component Fundamentals",
+       title: "NPAPI ISSUE",
        slug: "web-components",
        authorId: 1,
-       category: "HTML5"
+       category: "NPAPI",
+       NOS:88,
+       Description:"NPAPI ISSUE"
    }
 ];
 
 const authors =[
-    { id: 1, name: "Faraz Khan"},
-    { id: 2, name: "Shahir Ahmed"},
-    { id: 3, name: "Sabhyasachi Raj"}
+    { id: 1, name: "CLI"},
+    { id: 2, name: "CONTROL PLANE"},
+    { id: 3, name: "DATA PLANE"}
 ];
  
 const newCourse = {

@@ -11,14 +11,21 @@ const CourseForm = ({
   saving = false,
   errors = {}
 }) => {
-  return (
+  return (  
     <form onSubmit={onSave}>
-      <h2>{course.id ? "Edit" : "Add"} Course</h2>
+      <h2>{course.id ? "Edit" : "Add"} Issue</h2>
       {errors.onSave && (
         <div className="alert alert-danger" role="alert">
-          {errors.onSave}
+          {errors.onSave} 
         </div>
       )}
+{/*       { <TextInput
+        name="bugid"
+        label="BugId"
+        value={course.bugid}
+        onChange={onChange}
+        error={errors.bugid}
+      /> } */}
       <TextInput
         name="title"
         label="Title"
@@ -29,9 +36,9 @@ const CourseForm = ({
       
      <SelectInput 
         name="authorId"
-        label="Author"
+        label="Component"
         value={course.authorId || ""}
-        defaultOption="Select Author"
+        defaultOption="Select Component"
         options={authors.map(authors =>({
             value: authors.id,
             text: authors.name
@@ -47,9 +54,20 @@ const CourseForm = ({
         onChange={onChange}
         error={errors.category}
       />
-    <button type="submit" disabled={saving} className="btn btn-primary">
-        {saving ? "Saving..." : "Save"}
+
+<TextInput 
+        name="description"
+        label="Description"
+        value={course.description}
+        onChange={onChange}
+        error={errors.category}
+      />
+      
+      <button type="submit" disabled={saving} className="btn btn-primary">
+        {saving ? "Saving..." : "Save"} 
     </button>
+    
+    <font color="white">{course.NOS++}</font>
     </form>
   );
 };

@@ -58,6 +58,7 @@ function ManageCoursePage({
     const { title, authorId, category } = course;
     const error = {};
 
+    /* if (!bugid) error.title = "Bugid is required"; */
     if (!title) error.title = "Title is required";
     if (!authorId) error.author = "Author is required";
     if (!category) error.category = "Category is required";

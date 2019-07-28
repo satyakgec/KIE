@@ -40,7 +40,7 @@ class CoursesPage extends React.Component {
     return (
       <>
         {this.state.redirectToAddCourse && <Redirect to="/course" />}
-        <h2>Courses</h2>
+        <h2>Issues</h2>
         {this.props.loading ? (
           <Spinner />
         ) : (
@@ -50,7 +50,7 @@ class CoursesPage extends React.Component {
               className="btn btn-primary add-course"
               onClick={() => this.setState({ redirectToAddCourse: true })}
             >
-              Add Course
+              Add Issue
             </button>
         
             <CourseList

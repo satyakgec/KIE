@@ -7,30 +7,31 @@ const CourseList = ({ courses, onDeleteClick }) => {
     <table className="table">
       <thead>
         <tr>
-          <th />
+          <th>Bug ID</th>
           <th>Title</th>
-          <th>Author</th>
+          <th>Component</th>
           <th>Category</th>
+          <th>Description</th>
+          <th>Action</th>
           <th />
         </tr>
       </thead>
       <tbody>
         {courses.map(course => {
+          //console.log(course.description);
           return (
             <tr key={course.id}>
+              
               <td>
-                <a
-                  className="btn btn-light"
-                  href={"http:/onlinecourse.com/courses/" + course.slug}
-                >
-                  Watch
-                </a>
+             <Link to={"/course/" + course.slug}>{course.id}</Link> 
+             {/*  <Link to={"../about/AboutPage.js"}>{course.id}</Link> */}
               </td>
-              <td>
-                <Link to={"/course/" + course.slug}>{course.title}</Link>
-              </td>
+              <td>{course.title}</td>
               <td>{course.authorName}</td>
               <td>{course.category}</td>
+              <td>{course.description}</td>
+             
+              
               <td>
                 <button
                   className="btn btn-outline-danger"

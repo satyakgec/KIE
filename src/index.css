@@ -1,7 +1,43 @@
 #app {
     max-width: 850px;
     margin: 0 auto;
+    background-color: #FAFAFA;
 }
 nav {
     padding: 20px 0 20px 0;
+    background-color: #02F9F3;
+}
+.search {
+    font-family: monospace;
+    box-sizing: border-box;
+}
+.search h3 {
+    text-align: center;
+}
+.search input {
+    width: 500px;
+    margin: 10px auto;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+.search ul {
+    list-style-type: none;
+    width: 500px;
+    margin: 0 auto;
+    padding: 0;
+}
+.search ul li {
+    background-color: #02F9F3;
+    padding: 10px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.search ul li:hover {
+    background-color: #ededed;
+}
+.search ul li a {
+    position: absolute;
+    left: 200px;
+    color: #777;
 }

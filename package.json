@@ -18,7 +18,7 @@
       "\\.(css|less)$": "<rootDir>/tools/styleMock.js"
     }
   },
-  "author": "imtiyaz",
+  "author": "SFS HACKERS",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "4.3.1",
@@ -30,6 +30,7 @@
     "react-router-dom": "4.3.1",
     "react-toastify": "4.5.2",
     "reactstrap": "^8.0.0",
+    "recharts": "^1.6.2",
     "redux": "4.0.1",
     "redux-thunk": "2.3.0",
     "reselect": "4.0.0"
@@ -67,7 +68,8 @@
     "webpack": "4.29.0",
     "webpack-bundle-analyzer": "3.0.3",
     "webpack-cli": "3.2.1",
-    "webpack-dev-server": "3.1.14"
+    "webpack-dev-server": "3.1.14",
+    "redux-logger": "3.0.6"
   },
   "engines": {
     "node": ">=8"

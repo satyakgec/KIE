@@ -9,6 +9,10 @@ import configureStore from "./redux/configureStore";
 
 const store = configureStore();
 
+// setup fake backend
+import { configureFakeBackend } from './_helpers/fake-backend';
+configureFakeBackend();
+
 render(
   <ReduxProvider store={store}>
     <Router>

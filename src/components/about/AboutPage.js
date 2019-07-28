@@ -1,10 +1,12 @@
 import React from "react";
+
+import PropTypes from "prop-types";
+import TextInput from "../common/TextInput";
 const AboutPage = () => (
     <div>
         <h2>About</h2>
         <p>
-            This app uses Ract, Redux, React Router and many other helpful
-            libraries.
+            KNOWN ISSUE ENCYCLOPEDIA
         </p>
     </div>
 );
